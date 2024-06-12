@@ -34,7 +34,7 @@ app.use(userRouter)
 app.use(questionRouter)
 
 // delete question every minute
-deleteQuestionsPeriodically();
+// deleteQuestionsPeriodically();
   
 app.listen(PORT, () => {
     console.log("Server up and running")
