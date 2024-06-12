@@ -12,10 +12,8 @@ const MYNAME = process.env.MYNAME
 const PASSWORD = process.env.PASSWORD
 const PORT = process.env.PORT
 
-console.log(MYNAME, PASSWORD, PORT);
-
 const app = express()
-const dbUrl = `mongodb+srv://${MYNAME}:${PASSWORD}@cluster0.ro3v8ye.mongodb.net/?retryWrites=true&w=majority`
+const dbUrl = `mongodb+srv://johanes:urIyMiwZwuBhpiu6@cluster0.ro3v8ye.mongodb.net/?retryWrites=true&w=majority`
 const connectionParam = {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
@@ -38,6 +36,6 @@ app.use(questionRouter)
 // delete question every minute
 // deleteQuestionsPeriodically();
   
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log("Server up and running")
 })
