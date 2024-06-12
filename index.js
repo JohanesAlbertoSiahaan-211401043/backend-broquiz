@@ -12,6 +12,8 @@ const MYNAME = process.env.MYNAME
 const PASSWORD = process.env.PASSWORD
 const PORT = process.env.PORT
 
+console.log(MYNAME, PASSWORD, PORT);
+
 const app = express()
 const dbUrl = `mongodb+srv://${MYNAME}:${PASSWORD}@cluster0.ro3v8ye.mongodb.net/?retryWrites=true&w=majority`
 const connectionParam = {
