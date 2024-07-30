@@ -1,0 +1,51 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/65006342cab3a0273174e021
+
+### 
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+    "username": "Nicholas hantu",
+    "password": "123",
+    "gender": "male",
+    "country": "indonesia",
+    "status": "newbie",
+    "points": 0,
+    "age": 12
+}
+
+###
+PATCH http://localhost:3000/users/650844dd516f646ec82ab34b
+Content-Type: application/json
+
+{
+  "_id": "650844dd516f646ec82ab34b",
+    "username": "Johanes",
+    "password": "$2a$10$ynQL.64VYlQkn3VJC.dPvuzClIrMcZ.8Mj/0HxkSnN3qsSWPHfuki",
+    "country": "Indonesian",
+    "gender": "male",
+    "status": "Beginner",
+    "points": 11000,
+    "age": 123,
+    "__v": 0
+}
+
+###
+DELETE http://localhost:3000/users/66a8b17cd22822f3599bb290
+
+###
+GET http://localhost:3000/question
+
+###
+POST http://localhost:3000/question 
+Content-Type: application/json
+
+{
+  
+}
+
+###
+DELETE http://localhost:3000/question/656846ac0f74cfff7b994ddb
